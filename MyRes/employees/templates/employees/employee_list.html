@@ -1,0 +1,9 @@
+{% extends 'employees.base.html' %}
+   {% block content %}
+   <h1>Employees</h1>
+   <ul>
+   {% for employee in object_list %}
+       <li>{{ employee.name }}</li>
+   {% endfor %}
+   </ul>
+   {% endblock %}
